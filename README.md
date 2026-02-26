@@ -1,4 +1,4 @@
-# ai-workspace
+# AI Workspace
 
 这是一个用于沉淀我在 **AI 开发与实际使用** 过程中的资料仓库，主要包含：
 
