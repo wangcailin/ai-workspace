@@ -11,21 +11,7 @@
 
 ### Node.js（使用 pnpm）
 
-- 使用 `pnpm install --filter <project_name>` 将该包加入工作区依赖范围，确保 ESLint、TypeScript 等工具能正确识别。
-- 创建新项目（Next.js + TypeScript）：
-  - 推荐：`pnpm dlx create-next-app@latest <project_name> --ts`
-  - 如需交互式选项，按提示选择即可（建议启用 ESLint、App Router 等，按项目约定为准）。
-- 检查每个包内的 `package.json` 的 `name` 字段以确认正确的项目名（忽略根目录的 `package.json`）。
-- 新增包要执行 `pnpm add`，不要直接修改 `package.json` 文件，保证包管理的一致性。
-
 ### Python（使用 uv）
-
-- Python 相关依赖与环境统一使用 **uv** 管理（不要使用 pip/poetry/conda 作为主流程）。
-- 常用命令示例：
-  - 创建虚拟环境：`uv venv`
-  - 安装依赖：`uv pip install -r requirements.txt`
-  - 运行脚本：`uv run python <script.py>`
-- 如果仓库中存在 `pyproject.toml` 锁文件，请优先遵循项目内既定的 uv 使用方式。
 
 ### 浏览器
 
@@ -124,3 +110,9 @@
 - **拒绝偷懒**：找到根因，不做临时修补，按资深开发标准执行。
 - **最小影响**：改动只触及必要部分，避免引入新 Bug。
 - **不要过度推测**：不添加未要求的功能、抽象、"灵活性"或"可配置性"。
+- 单个代码文件不要超过 2000 行。
+
+## 部分适用
+
+- 提交 mr 之前先 rebase 目标分支看是否是最新
+- 如果接收到了 `InfReview 代码审查报告` ，请先阅读报告，重点审查报告问题和业务场景是否匹配，不要盲目顺从
