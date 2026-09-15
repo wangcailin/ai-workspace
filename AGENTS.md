@@ -114,6 +114,7 @@
 - 提交 mr 之前先 rebase 目标分支看是否是最新
 - 如果有 `migration` ，要查阅当前项目的 migration sop，根据sop来生成migration。
 - 如果接收到了 `InfReview 代码审查报告` ，请先阅读报告，重点审查报告问题和业务场景是否匹配，不要盲目顺从修改
+- 只有 `git.tokfinity.com` 的仓库，才需要进行代码审查，其他仓库不需要进行代码审查
 
 ### 项目依赖说明
 
