@@ -132,6 +132,7 @@
 
 
 ### 项目依赖说明
+
 - gitops-deploy k8s 部署仓库：/Users/cailin/Workspace/gitops-deploy
 - InfOne 项目前端（租户内管理后台）：/Users/cailin/Workspace/infone-website
 - InfOne 项目运营管理后台（管理所有租户后台）：/Users/cailin/Workspace/infone-website
