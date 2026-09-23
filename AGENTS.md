@@ -144,4 +144,5 @@
 ### 本地集群凭证
 
 - 测试环境集群：kubectl config use-context dev
+- Pre集群：kubectl config use-context pre
 - 生产集群：kubectl config use-context prod
