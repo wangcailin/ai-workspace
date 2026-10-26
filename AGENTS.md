@@ -145,16 +145,23 @@
 
 ### 项目依赖说明
 
-- gitops-deploy k8s 部署仓库：/Users/cailin/Workspace/gitops-deploy
-- InfOne 项目前端（租户内管理后台）：/Users/cailin/Workspace/infone-website
-- InfOne 项目运营管理后台（管理所有租户后台）：/Users/cailin/Workspace/infone-website
-- InfOne 项目后端：/Users/cailin/Workspace/infone_uc ，MR 是 dev 分支
-- tokenhub 项目前后端：/Users/cailin/Workspace/tokenhub，MR 是 dev 分支，测试环境部署在 ssh root@172.31.0.6,prod 环境部署在 ssh root@172.31.0.5
-- acode_server 项目：/Users/cailin/Workspace/acode_server
-- 官网前端：/Users/cailin/Workspace/tokfinity_website
+- gitops-deploy k8s 部署仓库：~/Workspace/gitops-deploy
+- InfOne 项目前端（租户内管理后台）：~/Workspace/infone-website
+- InfOne 项目运营管理后台（管理所有租户后台）：~/Workspace/infone-website
+- InfOne 项目后端：~/Workspace/infone_uc ，MR 是 dev 分支
+- tokenhub 项目前后端：~/Workspace/tokenhub，MR 是 dev 分支
+- acode_server 项目：~/Workspace/acode_server
+- 官网前端：~/Workspace/tokfinity_website
+- 数据仓库集群：~/Workspace/infone-lakehouse
+- 指标平台（cube、mcp）：~/Workspace/infone-data-query
 
 ### 本地集群凭证
 
 - 测试环境集群：kubectl config use-context dev
 - Pre集群：kubectl config use-context pre
 - 生产集群：kubectl config use-context prod
+- 数据仓库集群：kubectl config use-context dh
+
+### 集群变更注意事项
+- 如果是通过 helm 来托管的集群组件不要使用 kubectl 来配置，而是使用 helm 来管理。
+- 如果当前集群是 prod 集群，做任何变更都需要经过我的二次确认。
